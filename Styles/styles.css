@@ -1,0 +1,58 @@
+/*Common theme*/
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #0b0b39, #094496);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Classes */
+
+.asignatura{
+
+    font-style: normal;
+    font-family: 'Consolas', 'Courier New', 'Source Code Pro', monospace;
+    display: inline-flexbox;
+    width: 80vw;                 /* 80% of the viewport width */
+    margin: auto;                /* Center the block */
+    border-radius: 10px;         /* Rounded corners */
+    border: 2px solid #ccc;      /* Clear gray border */
+    background-color: rgba(50, 50, 50, 0.5); /* Transparent darker gray background */
+    box-sizing: border-box;      /* Include border in the element's total width and height */
+    margin-bottom: 20px; 
+    
+    
+    h2{
+        color: wheat;
+        text-decoration: underline;
+        justify-content: center;
+        margin-left: 3%;
+    }
+
+    a {
+        margin-left: 3%;
+        color: rgb(42, 128, 8);
+    }
+
+    #mensajeError {
+        margin-left: 3%;
+        color: red;
+    }
+}
+
+
+/*Individual Objects*/
+
+#titulo {
+
+    color: wheat;
+    font-style: normal;
+    font-family: 'Consolas', 'Courier New', 'Source Code Pro', monospace;
+
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 10vh;            /* Full viewport height */
+
+}
