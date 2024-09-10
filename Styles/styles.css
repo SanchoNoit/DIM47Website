@@ -1,10 +1,18 @@
 /*Common theme*/
 body{
     height: 100vh;
-    background-image: linear-gradient(to bottom, #0b0b39, #094496);
+    background-image: linear-gradient(to bottom, #0b0b39, #4c0767);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Cyberway-Riders'; /* Name your custom font */
+    src: url('../Fonts/cyberway-riders-font/CyberwayRiders-lg97d.ttf') format('truetype'); /* Specify the path to the font file(s) */
+    /* Add more format declarations if you have other font formats available */
 }
 
 /* Classes */
@@ -20,7 +28,8 @@ body{
     border: 2px solid #ccc;      /* Clear gray border */
     background-color: rgba(50, 50, 50, 0.5); /* Transparent darker gray background */
     box-sizing: border-box;      /* Include border in the element's total width and height */
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    margin-top: 30px; 
     
     
     h2{
@@ -46,13 +55,18 @@ body{
 
 #titulo {
 
-    color: wheat;
-    font-style: normal;
-    font-family: 'Consolas', 'Courier New', 'Source Code Pro', monospace;
-
+    color: rgb(138, 132, 18);
+    font-family: 'Cyberway-Riders';
+    font-size: xx-large;
     display: flex;
     justify-content: center;  /* Center horizontally */
     align-items: center;      /* Center vertically */
     height: 10vh;            /* Full viewport height */
+    margin-top: 15px;
+}
 
+#backHome {
+    padding-left: 5%;
+    color: rgb(42, 128, 8);
+    font-family: 'Cyberway-Riders';
 }
