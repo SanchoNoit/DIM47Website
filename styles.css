@@ -11,7 +11,7 @@ body{
 
 @font-face {
     font-family: 'Cyberway-Riders'; /* Name your custom font */
-    src: url('../Fonts/cyberway-riders-font/CyberwayRiders-lg97d.ttf') format('truetype'); /* Specify the path to the font file(s) */
+    src: url('Fonts/cyberway-riders-font/CyberwayRiders-lg97d.ttf') format('truetype'); /* Specify the path to the font file(s) */
     /* Add more format declarations if you have other font formats available */
 }
 
