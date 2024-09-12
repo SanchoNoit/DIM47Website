@@ -32,8 +32,9 @@ function init(){
 
     function loaderAway() {
         // GSAP tween to hide the loading screen
-        return gsap.to(loader, { 
-            duration: 0.8, 
+        return gsap.to(loader, 
+        { 
+            duration: 1.8, 
             scaleX: 0,
             xPercent: 5, 
             rotation: -10, 
@@ -67,13 +68,14 @@ function init(){
 
     barba.init({
         transitions: [{
+            async enter() {
+                loaderAway();
+           },
             async leave() {
                 await loaderIn();
         
-            },
-            enter() {
-                loaderAway();
             }
+            
         }]
     })
 
