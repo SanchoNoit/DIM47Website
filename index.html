@@ -1,17 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nav Item | untoldcoding</title>
     <link rel="stylesheet" href="Styles/stylesIndex.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/app.css">
+
   </head>
-  <body>
+
+  <body data-barba="wrapper">
+    <div class="loader"></div>
     <div id="titulo">
         <h1>DIM47</h1>
 
     </div>
-    <div class="container">
+    <div class="container" data-barba="container">
       <ul id="menu">
         <a
           class="menu-button icon-plus"
@@ -41,7 +48,7 @@
         </li>
         <li class=" documentacion menu-item ">
           <a href="documentacion.html">
-            <p class="doc">Documentación</p>
+            <p class="doc">Documentacion</p>
           </a>
         </li>
        
@@ -59,9 +66,9 @@
         menuButton.click();
       };
     </script>
-    <script
-      src="https://kit.fontawesome.com/28069d2172.js"
-      crossorigin="anonymous"
-    ></script>
+    
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="js/main.js" ></script>
   </body>
 </html>

@@ -1,11 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="es">
     <head>
         <meta charset="UTF-8"> <!-- Asegura la introducción de caracteres especiales -->
         <title>Documentacion</title>
         <link rel="stylesheet" href="Styles/styles.css">
+        <link rel="stylesheet" href="css/normalize.css">
+         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/app.css">
     </head>
-    <body id="documentacion">
+    <body id="documentacion" data-barber="wrapper">
+        <div class="loader"></div>
         <div id="backHome"><a href="index.html">Volver a DIM47</a></div>
 
         <div id="titulo">
@@ -23,7 +28,7 @@
         </div>
 -->
 
-        <div class="asignatura" id="">
+        <div class="asignatura" id="" data-barber="container">
             <h2>Recursos</h2>
             <p id="mensajeError">Programa Semanal</a>
             <ul>
@@ -34,7 +39,9 @@
         
 
        
-
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="js/main.js" defer></script>
     </body>
     
 </html>
