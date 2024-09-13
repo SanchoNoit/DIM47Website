@@ -1,0 +1,16 @@
+ubuntu-server-14.04.iso
+rhel-6.6.iso
+slackware-14.2-64b-dvd.iso
+xubuntu-14.04.iso
+fedora-25-64b-live.iso
+knoppix-7-32b.iso
+parted-magic-12-32b-live.iso
+zorin-12-64b.iso
+kali-linux-16.2-live.iso
+tens-1.7-32b.iso
+tails-2.9-64b.iso
+robolinux-8.7-32b.iso
+microwatt-r10-32b.iso
+bodhi-4-64b.iso
+parrot-3.4-64b.iso
+ubuntu-16.10-desktop-amd64
