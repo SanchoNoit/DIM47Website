@@ -1,8 +1,7 @@
 /*Common theme*/
 body{
-    height: 100vh;
     background-image: linear-gradient(to bottom, #0b0b39, #4c0767);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
