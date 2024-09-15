@@ -1,0 +1,1 @@
+document.getElementById("respuestaCorrecta").innerHTML.replace("Yiiija");
