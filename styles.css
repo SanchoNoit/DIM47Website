@@ -1,6 +1,6 @@
 /*Common theme*/
 body{
-    height: 100vh;
+    min-height: 100vh; /* Asegura que el cuerpo es al menos del tamaño del 'viewport'  */
     margin: 0; /* Elimina márgenes si es necesario */
     background-image: linear-gradient(to bottom, #0b0b39, #4c0767);
     background-size: cover;
