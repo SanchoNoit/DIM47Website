@@ -1,7 +1,9 @@
 /*Common theme*/
 body{
+    height: 100vh;
+    margin: 0; /* Elimina márgenes si es necesario */
     background-image: linear-gradient(to bottom, #0b0b39, #4c0767);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -25,7 +27,7 @@ body{
     margin: auto;                /* Center the block */
     border-radius: 10px;         /* Rounded corners */
     border: 2px solid #ccc;      /* Clear gray border */
-    background-color: rgba(50, 50, 50, 0.5); /* Transparent darker gray background */
+    background-color: rgba(22, 22, 22, 0.671); /* Transparent darker gray background */
     box-sizing: border-box;      /* Include border in the element's total width and height */
     margin-bottom: 20px;
     margin-top: 30px; 
@@ -38,9 +40,14 @@ body{
         margin-left: 3%;
     }
 
+    h3{
+        color: rgb(214, 5, 5);
+        text-decoration: underline;
+    }
+
     a {
         margin-left: 3%;
-        color: rgb(42, 128, 8);
+        color: rgb(77, 234, 15);
     }
 
     #mensajeError {
