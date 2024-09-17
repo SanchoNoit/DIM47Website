@@ -82,3 +82,22 @@ body{
     margin-left: 5vh;
 
 }
+
+/* Style the navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #1d1515;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #839909;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    font-family: 'Cyberway-Riders';
+  }
