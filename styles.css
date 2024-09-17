@@ -91,11 +91,22 @@ body{
     background-color: #1d1515;
   }
   
-  /* Navbar links */
+  /* Enlaces de la barra de navegación, incluido cuando pasamos el cursor por encima */
   #navbar a {
     float: left;
     display: block;
     color: #839909;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    font-family: 'Cyberway-Riders';
+  }
+
+  #navbar a:hover {
+    float: left;
+    display: block;
+    color: #d2f02b;
+    background-color: purple;
     text-align: center;
     padding: 7px;
     text-decoration: none;
