@@ -45,6 +45,20 @@
             </ul>
         </div>
 
+        <script>
+            const loader = document.querySelector('.loader');
+    
+            gsap.to(loader, 
+        { 
+            duration: 0.8, 
+            scaleX: 0,
+            xPercent: 5, 
+            rotation: -10, 
+            transformOrigin: 'right center', 
+            ease: 'Power4.inOut'
+        });
+        </script>  
+
     </body>
     
 </html>

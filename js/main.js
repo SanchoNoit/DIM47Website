@@ -14,6 +14,7 @@ function init(){
 
     function loaderIn() {
         // GSAP tween to stretch the loading screen across the whole screen
+        
         return gsap.fromTo(loader, 
             {
                 rotation: 10,
@@ -32,12 +33,17 @@ function init(){
 
     function loaderAway() {
         // GSAP tween to hide the loading screen
-        return gsap.to(loader, 
+        
+        return gsap.from(loader,  {
+                rotation: -10,
+                scaleX: 0,
+                xPercent: -5
+            },
         { 
-            duration: 1.8, 
-            scaleX: 0,
-            xPercent: 5, 
-            rotation: -10, 
+            duration: 0.8,
+                xPercent: 0,
+                scaleX: 1, 
+                rotation: 0,
             transformOrigin: 'right center', 
             ease: 'Power4.inOut'
         });
@@ -68,13 +74,13 @@ function init(){
 
     barba.init({
         transitions: [{
-            async enter() {
-                loaderAway();
-           },
+             
             async leave() {
-                await loaderIn();
+                await loaderAway();
         
-            }
+            }, enter() {
+                loaderIn();
+          }
             
         }]
     })
@@ -83,4 +89,5 @@ function init(){
 
 window.addEventListener('load', function(){
     init();
+   
 });
