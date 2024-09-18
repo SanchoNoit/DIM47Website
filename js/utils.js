@@ -1,5 +1,5 @@
 
-import { readdirSync } from "fs";
+import * as fs from 'fs';
 
 function lisataContents(){
     var path = "Contents"
