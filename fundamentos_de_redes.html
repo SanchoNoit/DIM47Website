@@ -2,64 +2,60 @@
 <html lang="es" data-barba="wrapper">
     <head>
         <meta charset="UTF-8"> <!-- Asegura la introducción de caracteres especiales -->
-        <title>Arquitectura de Computadores</title>
+        <title>Fundamentos de Redes</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="demo.css">
         <link rel="stylesheet" href="app.css">
     </head>
-    <body id="arquitectura" data-barba="container">
-        <div class="loader"></div>
-        <div >
-            
-            <div id="backHome"><a href="index.html">Volver a DIM47</a></div>
+    <body id="redes" data-barba="container">
+        <div id="load" class="loader"></div>
+        <div id="backHome"><a href="index.html">Volver a DIM47</a></div>
 
         <div id="titulo">
-            <h1>Arquitectura de Computadores</h1> 
+            <h1>Fundamentos de Redes</h1> 
         </div>
 
         <!-- Sample de bloque para asignatura -->
 
 <!--       <div class="asignatura" id="">
-            <h2>Título asignatura</h2>
+            <h2>Título del apartado</h2>
             <a href="">Guía didáctica</a>
             <ul>
-                <li><a href="">Semana 1: Unidad didáctica 1</a></li>
+                <li><a href="">Nombre del subapartado</a></li>
             </ul>
         </div>
 -->
-
         <div class="asignatura" id="">
-            <h2>Tema 0 - Presentación</h2>
+            <h2>Introduccion</h2>
             <p id="mensajeError">Guía didáctica</a>
+            <p id="mensajeDeAusenciaDeTraspasDePresentacion">No se incluye traspa de presentación. Búsquenla en el aula, mis carnales - no mamen.</p>
+        </div>
+
+        <div class="asignatura" id="">
+            <h2>Tema 1: Conceptos Generales</h2>
             <ul>
-               
+                <li><a href="Contents/Fundamentos_de_redes/REDES 1. Conceptos Generales.pdf">Transparencias de Conceptos Generales</a></li>
+                <li><a href="https://view.genial.ly/65310ba620772400118c510a/interactive-content-quiz-pizarra">Quiz del profesorado</a></li>
+                <li><a href="https://view.genially.com/66e99b1084a78753f5ac8647/interactive-content-redes-1-conceptos-generales">Quiz del alumnado, para el alumnado</a></li>
             </ul>
         </div>
 
         <div class="asignatura" id="">
-            <h2>Tema 1 - Representación aritmética en computadores</h2>
+            <h2>Tema 2: Capa física y Capa de Enlace de Datos</h2>
             <ul>
-                <li></li>
+                <li><a href="Contents/Fundamentos_de_redes/REDES 2. La Capa Física y la Capa de Enlace 2.pdf">Transparencias de Capa física y de enlace de datos</a></li>
             </ul>
         </div>
 
-        <div class="asignatura" id="">
-            <h2>Tema 2 - Aspectos dinámicos del computador</h2>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-
-       
-    </div>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js" type="text/javascript"></script>
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
     <script src="main.js" ></script>
-        
+    
+  
     <script>
         window.onload = function () {
          
@@ -68,4 +64,5 @@
           
         };
       </script>
+    
 </html>

@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/Daniel/Source/Repos/DIM47Website/DIM47Website/index.html#menu",
+            "url": "http://localhost:8080/home/a06/Escritorio/dim47web/nuevo/DIM47Website/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

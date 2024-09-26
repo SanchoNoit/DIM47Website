@@ -5,19 +5,27 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(images/fondo2.jpg);
+    background-image: url(Styles/images/fondo2.jpg);
 }
 
 #linux{
-    background-image: url(images/linux.png);
+    background-image: url(Styles/images/linux.png);
 }
 
 #algoritmos{
-    background-image: url(images/alg.png);
+    background-image: url(Styles/images/alg.png);
 }
 
 #arquitectura{
-    background-image: url(images/fondo2.jpg);
+    background-image: url(Styles/images/fondo2.jpg);
+}
+
+#memes{
+    background-image: url(Styles/images/fondo2.jpg);
+}
+
+#redes{
+    background-image: url(Styles/images/fondo2.jpg);
 }
 /* Fonts */
 

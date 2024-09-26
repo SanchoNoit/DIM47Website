@@ -2,7 +2,7 @@ body {
     font-family: "Dosis", sans-serif;
     text-align: center;
     background-color: rgb(1, 27, 122);
-    background-image: url(images/fondo1.jpg);
+    background-image: url(Styles/images/fondo1.jpg);
     background-size: COVER;
     background-position: center;
     overflow: hidden;
@@ -91,7 +91,7 @@ p {
     top: 50%;
     margin: -75px 0 0 -280px;
     border-radius: 50%;
-    background: url(images/fondo.jpg);
+    background: url(Styles/images/fondo.jpg);
     background-size: COVER;
     background-position: center;
     overflow: hidden;
@@ -101,7 +101,7 @@ p {
   }
   
   .linux {
-    background: url(images/linux.jpeg);
+    background: url(Styles/images/linux.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -109,21 +109,35 @@ p {
   }
 
   .algoritmo {
-    background: url(images/algoritmo.png);
+    background: url(Styles/images/algoritmo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .arquitectura {
-    background: url(images/procesador.jpeg);
+    background: url(Styles/images/procesador.jpeg);
     background-size: cover;
     background-position: center;
   
   }
 
   .documentacion {
-    background: url(images/images.jpg);
+    background: url(Styles/images/images.jpg);
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .memes {
+    background: url(Styles/images/meme.jpg);
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .redes {
+    background: url(Styles/images/meme.jpg);
     background-size: cover;
     background-position: center;
 
@@ -140,6 +154,9 @@ p {
     opacity: 1;
   }
   
+
+
+ 
   .menu-item {
     
     width: 240px;
@@ -158,6 +175,22 @@ p {
   }
   
 
+  .menu-item2{
+    
+    width: 240px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    line-height: 5px;
+    top: 50%;
+    margin: -50px 0 0 -50px;
+    border-radius: 50%;
+    background-color: rgba(160, 21, 21, 0.588);
+    margin: -55px 0 0 -200px;
+    transform: translate(0px, 0px);
+    transition: transform 500ms;
+    z-index: -3;
+  }
 
   .menu-item:hover {
     background-color: #c71414;
@@ -172,10 +205,35 @@ p {
     left: 0;
     text-decoration: none;
   }
+
+  .menu-item2:hover {
+    background-color: #c71414;
+    color: #c71414;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
   
+  .menu-item2 a {
+    color: #ffffff;
+    position: relative;
+    top: 30%;
+    left: 0;
+    text-decoration: none;
+  }
+  
+  #menu:not(:target) > .menu-item2:nth-child(8) {
+    transform: rotate(20deg) translateY(-255px) translateX(100px) rotate(-20deg);
+    transition-delay: 0.1s;
+  }
+
+
+  #menu:not(:target) > .menu-item2:nth-child(7) {
+    transform: rotate(60deg) translateY(-300px) translateX(250px) rotate(300deg);
+    transition-delay: 0.1s;
+  }
+
   #menu:target > .menu-item:nth-child(6) {
     transform: rotate(60deg) translateY(-300px) translateX(250px) rotate(300deg);
-    transition-delay: 0s;
+    transition-delay: 0.1s;
   }
   
   #menu:target > .menu-item:nth-child(5) {
@@ -185,13 +243,15 @@ p {
   
   #menu:target > .menu-item:nth-child(3) {
     transform: rotate(-20deg) translateY(-255px) translateX(-100px) rotate(20deg);
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
   }
   
   #menu:target > .menu-item:nth-child(4) {
     transform: rotate(-60deg) translateY(-300px) translateX(-250px) rotate(60deg);
-    transition-delay: 0.3s;
+    transition-delay: 0.1s;
   }
+  
+
   
   .content {
     position: absolute;
