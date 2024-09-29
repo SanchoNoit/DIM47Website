@@ -143,6 +143,13 @@ p {
 
   }
 
+  .poo {
+    background: url(Styles/images/meme.jpg);
+    background-size: cover;
+    background-position: center;
+
+  }
+
   #menu:not(:target) > a:first-of-type,
   #menu:target > a:last-of-type {
     opacity: 1;
@@ -220,6 +227,12 @@ p {
     text-decoration: none;
   }
   
+
+  #menu:not(:target) > .menu-item2:nth-child(9) {
+    transform: rotate(-20deg) translateY(-255px) translateX(-100px) rotate(20deg);
+    transition-delay: 0.1s;
+  }
+
   #menu:not(:target) > .menu-item2:nth-child(8) {
     transform: rotate(20deg) translateY(-255px) translateX(100px) rotate(-20deg);
     transition-delay: 0.1s;

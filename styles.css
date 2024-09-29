@@ -1,37 +1,18 @@
 /*Common theme*/
 body{
-    height: 100vh;
+    min-height: 100vh; /* Asegura que el cuerpo es al menos del tamaño del 'viewport'  */
+    margin: 0; /* Elimina márgenes si es necesario */
     background-image: linear-gradient(to bottom, #0b0b39, #4c0767);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(Styles/images/fondo2.jpg);
 }
 
-#linux{
-    background-image: url(Styles/images/linux.png);
-}
-
-#algoritmos{
-    background-image: url(Styles/images/alg.png);
-}
-
-#arquitectura{
-    background-image: url(Styles/images/fondo2.jpg);
-}
-
-#memes{
-    background-image: url(Styles/images/fondo2.jpg);
-}
-
-#redes{
-    background-image: url(Styles/images/fondo2.jpg);
-}
 /* Fonts */
 
 @font-face {
     font-family: 'Cyberway-Riders'; /* Name your custom font */
-    src: url('Fonts/Pixellettersfull-BnJ5.ttf') format('truetype'); /* Specify the path to the font file(s) */
+    src: url('Fonts/cyberway-riders-font/CyberwayRiders-lg97d.ttf') format('truetype'); /* Specify the path to the font file(s) */
     /* Add more format declarations if you have other font formats available */
 }
 
@@ -46,7 +27,7 @@ body{
     margin: auto;                /* Center the block */
     border-radius: 10px;         /* Rounded corners */
     border: 2px solid #ccc;      /* Clear gray border */
-    background-color: rgba(50, 50, 50, 0.5); /* Transparent darker gray background */
+    background-color: rgba(22, 22, 22, 0.671); /* Transparent darker gray background */
     box-sizing: border-box;      /* Include border in the element's total width and height */
     margin-bottom: 20px;
     margin-top: 30px; 
@@ -59,9 +40,14 @@ body{
         margin-left: 3%;
     }
 
+    h3{
+        color: rgb(214, 5, 5);
+        text-decoration: underline;
+    }
+
     a {
         margin-left: 3%;
-        color: rgb(241, 243, 241);
+        color: rgb(77, 234, 15);
     }
 
     #mensajeError {
@@ -90,3 +76,39 @@ body{
     color: rgb(42, 128, 8);
     font-family: 'Cyberway-Riders';
 }
+
+#mensajeDeAusenciaDeTraspasDePresentacion {
+
+    margin-left: 5vh;
+
+}
+
+/* Style the navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #1d1515;
+  }
+  
+  /* Enlaces de la barra de navegación, incluido cuando pasamos el cursor por encima */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #839909;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    font-family: 'Cyberway-Riders';
+  }
+
+  #navbar a:hover {
+    float: left;
+    display: block;
+    color: #d2f02b;
+    background-color: purple;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    font-family: 'Cyberway-Riders';
+  }
