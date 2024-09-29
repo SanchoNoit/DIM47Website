@@ -137,14 +137,14 @@ p {
   }
 
   .redes {
-    background: url(Styles/images/meme.jpg);
+    background: url(Styles/images/redes.jpg);
     background-size: cover;
     background-position: center;
 
   }
 
   .poo {
-    background: url(Styles/images/meme.jpg);
+    background: url(Styles/images/poo.jpg);
     background-size: cover;
     background-position: center;
 
@@ -228,13 +228,13 @@ p {
   }
   
 
-  #menu:not(:target) > .menu-item2:nth-child(9) {
-    transform: rotate(-20deg) translateY(-255px) translateX(-100px) rotate(20deg);
+  #menu:target > .menu-item2:nth-child(9) {
+    transform: rotate(-20deg) translateY(-355px) translateX(-400px) rotate(20deg);
     transition-delay: 0.1s;
   }
 
-  #menu:not(:target) > .menu-item2:nth-child(8) {
-    transform: rotate(20deg) translateY(-255px) translateX(100px) rotate(-20deg);
+  #menu:target > .menu-item2:nth-child(8) {
+    transform: rotate(20deg) translateY(-355px) translateX(400px) rotate(-20deg);
     transition-delay: 0.1s;
   }
 
