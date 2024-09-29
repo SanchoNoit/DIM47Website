@@ -17,24 +17,26 @@ function init(){
         
         return gsap.fromTo(loader, 
             {
-                rotation: 10,
-                scaleX: 0,
-                xPercent: -5
+                rotation: 0,
+                scaleX: 10,
+                xPercent: 5
             },
             { 
                 duration: 0.8,
                 xPercent: 0,
-                scaleX: 1, 
+                scaleX: 10, 
                 rotation: 0,
                 ease: 'Power4.inOut', 
-                transformOrigin: 'left center'
+                transformOrigin: 'left center',
+                transition: opacity=500000000000000000,
+                opacity: 1
             });
     }
 
     function loaderAway() {
         // GSAP tween to hide the loading screen
         
-        return gsap.from(loader,  {
+        return gsap.fromTo(loader,  {
                 rotation: -10,
                 scaleX: 0,
                 xPercent: -5
@@ -76,10 +78,10 @@ function init(){
         transitions: [{
              
             async leave() {
-                await loaderAway();
+                await loaderIn();
         
             }, enter() {
-                loaderIn();
+                loaderAway();
           }
             
         }]
@@ -87,7 +89,55 @@ function init(){
 
 }
 
+
+//{
+//    rotation: 10,
+//    scaleX: 0,
+//    xPercent: -5
+//},
+//{ 
+//    duration: 0.8,
+//    xPercent: 0,
+//    scaleX: 1, 
+//    rotation: 0,
+//    ease: 'Power4.inOut', 
+//    transformOrigin: 'left center',
+//    transition: opacity=500000000000000000,
+//    opacity: 1
+//});
+
+
+function loaderAway() {
+    // GSAP tween to hide the loading screen
+    var loader = document.querySelector('.loader');
+    gsap.fromTo(loader,  
+        {
+            rotation: -10,
+            scaleX: 10,
+            xPercent: 10,
+            transformOrigin: 'right',
+            opacity:1
+        },
+    { 
+        duration: 0.8,
+                xPercent: 0,
+                scaleX: 1, 
+                rotation: 0,
+                
+        transform: 'left', 
+        ease: 'none',
+        
+        opacity: 0
+    });
+    loader.opacity=1
+    
+
+}
+
+
+
+
 window.addEventListener('load', function(){
     init();
-   
+    
 });
